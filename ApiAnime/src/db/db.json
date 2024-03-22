@@ -1,0 +1,29 @@
+{
+  "Animes": [
+    {
+      "id": "1",
+      "Anime": "One Piece",
+      "Favorite": "Monkey D. Luffy"
+    },
+    {
+      "id": "2",
+      "Anime": "Dragon Ball z",
+      "Favorite": "Son Goku"
+    },
+    {
+      "id": "3",
+      "Anime": "Attack on Titan (Shingeki no Kyojin)",
+      "Favorite": "Levi Ackerman"
+    },
+    {
+      "id": "4",
+      "Anime": "Death Note",
+      "Favorite": "L Lawliet (L)"
+    },
+    {
+      "id": "5",
+      "Anime": "My Hero Academia (Boku no Hero Academia)",
+      "Favorite": "Izuku Midoriya (Deku)"
+    }
+  ]
+}

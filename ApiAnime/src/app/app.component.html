@@ -1,0 +1,48 @@
+<div class="container">
+  <form>
+    <div>
+      <label>Id</label>
+      <input type="text" disabled [(ngModel)]="id" name="id">
+    </div>
+    
+    <div>
+      <label>Anime</label>
+      <input type="text" [(ngModel)]="anime" name="anime">
+    </div>
+    
+    <div>
+      <label>Personsagem Favorito</label>
+      <input type="text" [(ngModel)]="favorito" name="favorito">
+    </div>
+    
+    <button (click)="buttonClick()"> 
+      {{ id ? 'Salvar' : 'Criar' }}  
+    </button>
+  </form>
+  
+  <table>
+    <thead>
+      <th> Id </th>
+      <th> Anime </th>
+      <th> Favorito </th>
+      <th> ... </th>
+    </thead>
+  
+    <tbody>
+      <tr *ngFor="let anime of animes$ | async">
+        <td> {{ anime.id! }} </td>
+        <td> {{ anime.Anime }} </td>
+        <td> {{ anime.Favorite }} </td>
+        <td> 
+           <button type="button" style="margin-bottom: 20px;" class="btn btn-primary" (click)="preencherCampos(anime)">
+            Alterar
+          </button> 
+          <button class="button2"  type="button" (click)="remover(anime.id!)">
+            Remover
+          </button> 
+        </td>
+      </tr>
+
+    </tbody>
+  </table>
+</div>
